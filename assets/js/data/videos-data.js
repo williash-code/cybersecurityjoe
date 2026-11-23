@@ -74,19 +74,19 @@ const CS_VIDEOS_DATA = [
   },
   {
     id: "vid-5",
-    title: "Securing Your Home Network & Router Architecture",
-    duration: "16:05",
+    title: "Securing Your Home Network: Top 10 Ways to Protect It Now",
+    duration: "18:18",
     category: "Everyday Safety",
     badge: "Hands-on",
-    thumbnail: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
-    embedUrl: "https://www.youtube-nocookie.com/embed/R9K151q1Uik",
-    views: "580K",
-    publishDate: "August 2026",
-    summary: "A hands-on walkthrough demonstrating how to isolate smart TVs and IoT gadgets on a separate guest network so a compromised device cannot reach personal banking computers.",
+    thumbnail: "https://i.ytimg.com/vi/ivPptt3Ae5o/hqdefault.jpg",
+    embedUrl: "https://www.youtube-nocookie.com/embed/ivPptt3Ae5o",
+    views: "920K",
+    publishDate: "November 2026",
+    summary: "A masterclass by Dave's Garage breaking down the top 10 ways to secure your home network from intrusion, configure router architecture, and isolate vulnerable IoT devices.",
     takeaways: [
-      "Changing default router admin passwords and turning off WPS",
-      "Setting up a dedicated IoT Guest Wi-Fi network in 5 minutes",
-      "Enabling WPA3 encryption for maximum household protection"
+      "Hardening router credentials, disabling UPnP, and updating firmware",
+      "Segmenting smart TVs and IoT gadgets onto a dedicated guest network",
+      "DNS sinkholing, WPA3 encryption, and home firewall best practices"
     ]
   }
 ];
