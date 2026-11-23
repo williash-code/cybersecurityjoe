@@ -117,7 +117,7 @@ function renderSingleResource() {
           </div>
           <div style="display: flex; gap: 0.8rem;">
             <a href="resources.html" class="btn btn-secondary btn-sm">All Resources</a>
-            <a href="contact.html" class="btn btn-primary btn-sm">Consult Joe →</a>
+            <a href="contact.html" class="btn btn-primary btn-sm">Consult Shane →</a>
           </div>
         </div>
       </div>

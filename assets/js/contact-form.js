@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await response.json().catch(() => null);
 
       if (response.ok && data && data.success) {
-        showAlert('success', data.message || 'Thank you! Your message has been received. Joe will review and respond shortly.');
+        showAlert('success', data.message || 'Thank you! Your message has been received. Shane will review and respond shortly.');
         form.reset();
       } else {
         // Handle server message or fallback

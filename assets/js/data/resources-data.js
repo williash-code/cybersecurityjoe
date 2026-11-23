@@ -101,7 +101,7 @@ const CS_RESOURCES_DATA = [
       <h3>What Inside the Codex</h3>
       <ul>
         <li><strong>Over 60 Curated Milestones:</strong> Featuring declassified historical notes, direct quotes from network pioneers, and technical anatomy explained in plain language.</li>
-        <li><strong>Era-by-Era Audio & Video Commentary:</strong> Joe's contextual breakdown explaining how each historical breach directly shaped the security settings on your modern smartphone.</li>
+        <li><strong>Era-by-Era Audio & Video Commentary:</strong> Shane's contextual breakdown explaining how each historical breach directly shaped the security settings on your modern smartphone.</li>
         <li><strong>Interactive Timeline Visualization:</strong> Filterable by historical era, attack vector, or defense breakthrough.</li>
       </ul>
     `,
@@ -136,7 +136,7 @@ const CS_RESOURCES_DATA = [
       <p>Most career guides are written by certificate vendors trying to sell $5,000 bootcamps or academics who haven't interviewed for an enterprise role in twenty years. Aspiring professionals are left confused about whether they need to learn Python, spend thousands on degrees, or memorize 500 acronyms.</p>
 
       <h3>The Practical Roadmap</h3>
-      <p>Drawing on years of defense and ISSM management experience, Joe maps out the exact sequence of practical skills, free practice environments, and resume positioning that hiring managers look for in real candidates.</p>
+      <p>Drawing on years of defense and ISSM management experience, Shane maps out the exact sequence of practical skills, free practice environments, and resume positioning that hiring managers look for in real candidates.</p>
 
       <h3>Roadmap Stages</h3>
       <ul>
@@ -177,7 +177,7 @@ const CS_RESOURCES_DATA = [
       <p>Over 43% of cyber attacks target small businesses, yet 60% of small companies that suffer a major data breach go out of business within six months. Enterprise cybersecurity solutions start at $50,000/year, which is simply out of reach for a 10-person local accounting firm or non-profit.</p>
 
       <h3>The Solution</h3>
-      <p>Joe distilled Fortune 500 security standards into a practical toolkit that delivers 95% of enterprise protection for less than $50/user per month using built-in software tools.</p>
+      <p>Shane distilled Fortune 500 security standards into a practical toolkit that delivers 95% of enterprise protection for less than $50/user per month using built-in software tools.</p>
 
       <h3>Key Included Assets</h3>
       <ul>

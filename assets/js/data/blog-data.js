@@ -138,7 +138,7 @@ const CS_BLOG_DATA = [
       
       <p>Here is the magic analogy: <strong>Think of a traditional password like a secret spoken password at a speakeasy door.</strong> If someone overhears it or tricks you into saying it, they can sneak in.</p>
       
-      <p><strong>A passkey is like a physical key paired to a specialized lock.</strong> Your phone holds the private key securely inside its encrypted hardware chip. The website only holds the public lock. When you sign in, your phone unlocks the challenge locally and signals to the website: <em>"Yes, this is Joe."</em> The website never knows your private secret, and you never type a character.</p>
+      <p><strong>A passkey is like a physical key paired to a specialized lock.</strong> Your phone holds the private key securely inside its encrypted hardware chip. The website only holds the public lock. When you sign in, your phone unlocks the challenge locally and signals to the website: <em>"Yes, this is Shane."</em> The website never knows your private secret, and you never type a character.</p>
 
       <div class="article-callout">
         <h4><span class="callout-icon">✨</span> Why Phishing Is Impossible With Passkeys</h4>

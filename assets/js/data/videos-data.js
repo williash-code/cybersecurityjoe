@@ -14,7 +14,7 @@ const CS_VIDEOS_DATA = [
     embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ", // Safe placeholder video embed
     views: "42.8K",
     publishDate: "November 2026",
-    summary: "Joe breaks down how generative AI voice synthesis actually works in real time, why the media exaggerates its power, and how to set up an unbreakable 2-minute family safe word protocol.",
+    summary: "Shane breaks down how generative AI voice synthesis actually works in real time, why the media exaggerates its power, and how to set up an unbreakable 2-minute family safe word protocol.",
     takeaways: [
       "Why emotional urgency is the real scam, not the AI voice itself",
       "Setting up a family challenge-response phrase",
@@ -48,7 +48,7 @@ const CS_VIDEOS_DATA = [
     embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
     views: "64.1K",
     publishDate: "October 2026",
-    summary: "Watch Joe demonstrate live on his phone how passkeys work, why they make phishing mathematically impossible, and how to switch your Google, Apple, and Amazon accounts in under 60 seconds.",
+    summary: "Watch Shane demonstrate live on his phone how passkeys work, why they make phishing mathematically impossible, and how to switch your Google, Apple, and Amazon accounts in under 60 seconds.",
     takeaways: [
       "Public-key cryptography made simple with a lock-and-key analogy",
       "Why fake copycat phishing sites can never steal a passkey",
@@ -65,7 +65,7 @@ const CS_VIDEOS_DATA = [
     embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
     views: "115K",
     publishDate: "September 2026",
-    summary: "Skip the $15,000 bootcamps. Joe outlines the exact free hands-on labs, high-yield certifications (Security+), and resume presentation techniques that hiring managers actually look for.",
+    summary: "Skip the $15,000 bootcamps. Shane outlines the exact free hands-on labs, high-yield certifications (Security+), and resume presentation techniques that hiring managers actually look for.",
     takeaways: [
       "The myth of the 'entry-level' cybersecurity role and how to bypass it",
       "Free interactive labs that impress interviewers more than multiple-choice certs",
@@ -82,7 +82,7 @@ const CS_VIDEOS_DATA = [
     embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
     views: "37.5K",
     publishDate: "August 2026",
-    summary: "Walk through Joe's router settings as he demonstrates how to isolate smart TVs and smart light bulbs on a separate guest network so a hacked IoT device can't touch your banking computers.",
+    summary: "Walk through Shane's router settings as he demonstrates how to isolate smart TVs and smart light bulbs on a separate guest network so a hacked IoT device can't touch your banking computers.",
     takeaways: [
       "Changing default router admin passwords and turning off WPS",
       "Setting up a dedicated IoT Guest Wi-Fi network in 5 minutes",
