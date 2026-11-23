@@ -177,6 +177,10 @@ function initBlogArchive() {
     filtered.forEach(post => {
       container.appendChild(createBlogCardElement(post));
     });
+
+    if (!searchTerm) {
+      container.appendChild(createComingSoonArticleCardElement(activeCategory));
+    }
   }
 
   // Category filter clicks
@@ -224,6 +228,69 @@ function createBlogCardElement(post) {
     <div class="card-footer">
       <span style="font-size: 0.85rem; color: var(--color-text-dim);">By ${escapeHtml(post.author.name)}</span>
       <a href="article.html?slug=${encodeURIComponent(post.slug)}" class="btn btn-secondary btn-sm">Read Story →</a>
+    </div>
+  `;
+  return card;
+}
+
+/**
+ * Branded "More Articles Coming Soon" Card Component
+ */
+function createComingSoonArticleCardElement(activeCategory) {
+  const card = document.createElement('article');
+  card.className = 'card animate-fade-in coming-soon-card';
+  card.style.cssText = `
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px dashed rgba(14, 165, 233, 0.45);
+    background: radial-gradient(circle at 50% 10%, rgba(14, 165, 233, 0.12) 0%, var(--color-surface-base) 70%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: transform var(--transition-fast), border-color var(--transition-fast);
+  `;
+
+  card.addEventListener('mouseenter', () => {
+    card.style.borderColor = 'var(--color-primary-light)';
+    card.style.transform = 'translateY(-4px)';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.borderColor = 'rgba(14, 165, 233, 0.45)';
+    card.style.transform = 'translateY(0)';
+  });
+
+  card.innerHTML = `
+    <div>
+      <div class="card-media" style="background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.18) 0%, #080d19 80%); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 195px; padding: 1.8rem; border-bottom: 1px solid var(--color-border-subtle); position: relative;">
+        <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo" style="max-width: 220px; width: 100%; height: auto; filter: drop-shadow(0 10px 25px rgba(14, 165, 233, 0.45));">
+        <span class="badge badge-blue" style="position: absolute; bottom: 12px; font-size: 0.72rem; letter-spacing: 0.5px;">⚡ CSJOE EDITORIAL DESK</span>
+      </div>
+      
+      <div style="padding: 1.5rem 1.5rem 0.5rem;">
+        <div class="card-meta">
+          <span class="badge badge-amber">⚡ In Production</span>
+          <span>•</span>
+          <span style="font-family: var(--font-mono); color: var(--color-primary-light);">Weekly Essays</span>
+        </div>
+        
+        <h3 class="card-title" style="color: #ffffff; margin-bottom: 0.6rem; font-size: 1.25rem;">
+          More Articles Coming Soon
+        </h3>
+        
+        <p class="card-excerpt" style="color: var(--color-text-muted); line-height: 1.55; margin-bottom: 1.2rem;">
+          Shane, known as CyberSecurity Joe, publishes weekly zero-jargon analyses, cyber history documentaries, and threat breakdowns for everyday people.
+        </p>
+
+        <div style="margin-bottom: 1.2rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+          <span style="font-size: 0.75rem; background: var(--color-surface-elevated); color: var(--color-text-muted); padding: 0.25rem 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-subtle);">✓ Smart Home Threat Matrix</span>
+          <span style="font-size: 0.75rem; background: var(--color-surface-elevated); color: var(--color-text-muted); padding: 0.25rem 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-subtle);">✓ AI Voice Fraud Case Studies</span>
+          <span style="font-size: 0.75rem; background: var(--color-surface-elevated); color: var(--color-text-muted); padding: 0.25rem 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-subtle);">✓ Declassified Cyber History</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer" style="padding: 1.2rem 1.5rem; border-top: 1px solid var(--color-border-subtle); display: flex; justify-content: space-between; align-items: center;">
+      <span style="font-size: 0.85rem; color: var(--color-text-dim);">By CyberSecurity Joe</span>
+      <a href="contact.html" class="btn btn-secondary btn-sm" style="border-color: var(--color-primary-light); color: var(--color-primary-light);">Suggest a Topic →</a>
     </div>
   `;
   return card;
