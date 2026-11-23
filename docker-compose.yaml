@@ -1,0 +1,23 @@
+services:
+  web:
+    image: php:8.2-apache
+    container_name: cybersecurityjoe_web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - web-content:/var/www/html
+    depends_on:
+      downloader:
+        condition: service_completed_successfully
+
+  downloader:
+    image: alpine/git
+    container_name: cybersecurityjoe_sync
+    volumes:
+      - web-content:/site
+    command: >
+      sh -c "rm -rf /site/* && git clone https://github.com/williash-code/cybersecurityjoe.git /tmp/repo && cp -r /tmp/repo/* /site/ && echo 'CyberSecurityJoe site files deployed successfully!'"
+
+volumes:
+  web-content:

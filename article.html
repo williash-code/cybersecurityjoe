@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article | CyberSecurityJoe</title>
+  <meta name="description" content="Read insightful, zero-jargon cybersecurity advice and digital history from CyberSecurity Joe.">
+  <meta name="author" content="CyberSecurity Joe">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Article | CyberSecurityJoe">
+  <meta property="og:description" content="Zero jargon cybersecurity and AI guidance.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CyberSecurity Joe Home">
+        <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo">
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="history.html" class="nav-link">Cyber History</a>
+        <a href="ai-safety.html" class="nav-link">AI Demystified</a>
+        <a href="videos.html" class="nav-link">Videos</a>
+        <a href="blog.html" class="nav-link active">Articles</a>
+        <a href="resources.html" class="nav-link">Toolkits</a>
+        <a href="about.html" class="nav-link">About Joe</a>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-left: 0.5rem;">Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <span>🔍</span>
+          <span>Search</span>
+          <kbd>Ctrl+K</kbd>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== ARTICLE ROOT ==================== -->
+  <main id="single-article-root" class="section" style="padding-top: 0; min-height: 70vh;">
+    <!-- Populated dynamically via assets/js/blog-engine.js reading blog-data.js -->
+    <div class="container container-narrow" style="padding-top: calc(var(--header-height) + 4rem); text-align: center;">
+      <div class="spinner" style="width: 32px; height: 32px; border-width: 3px; border-top-color: var(--color-primary);"></div>
+      <p style="margin-top: 1rem; color: var(--color-text-dim);">Loading article...</p>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo" style="height: 48px; width: auto; margin-bottom: 0.8rem;">
+          <p style="color: var(--color-text-muted);">
+            Translating complex digital risks, AI safety, and 50 years of cyber history into clear, empowering mental models for everyday individuals and families.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul class="footer-links">
+            <li><a href="blog.html">AI Safety</a></li>
+            <li><a href="blog.html">Everyday Defense</a></li>
+            <li><a href="blog.html">Cyber History</a></li>
+            <li><a href="blog.html">Career Advice</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Hubs</h5>
+          <ul class="footer-links">
+            <li><a href="history.html">Cyber History Codex</a></li>
+            <li><a href="ai-safety.html">AI Demystified</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="resources.html">Toolkits</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Share</h5>
+          <p style="font-size: 0.85rem; color: var(--color-text-dim);">
+            Found this helpful? Share it with family or colleagues to help build a safer internet for everyone.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 CyberSecurity Joe. All rights reserved.</div>
+        <div>Standard Hostinger Ready Deployment</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-search-header">
+        <span style="color: var(--color-text-dim);">🔍</span>
+        <input type="text" id="modal-search-input" class="modal-search-input" placeholder="Search articles, history milestones, AI guides, or toolkits..." autocomplete="off">
+        <button class="modal-close btn btn-secondary btn-sm" aria-label="Close search">Esc</button>
+      </div>
+      <div id="modal-search-results" class="modal-search-results"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data/blog-data.js"></script>
+  <script src="assets/js/data/resources-data.js"></script>
+  <script src="assets/js/data/history-data.js"></script>
+  <script src="assets/js/data/videos-data.js"></script>
+  <script src="assets/js/blog-engine.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

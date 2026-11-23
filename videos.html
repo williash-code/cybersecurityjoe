@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Hub & Explainer Masterclasses | CyberSecurityJoe</title>
+  <meta name="description" content="Watch CyberSecurity Joe break down complex security concepts, AI safety protocols, passkeys, and historic cyber events in bite-sized, plain-English video lessons.">
+  <meta name="keywords" content="cybersecurity videos, AI safety masterclass, passkeys tutorial, cyber history documentary, cybersecurity joe youtube">
+  <meta name="author" content="CyberSecurity Joe">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="video.other">
+  <meta property="og:title" content="Video Hub & Explainer Masterclasses | CyberSecurityJoe">
+  <meta property="og:description" content="Engaging visual breakdowns that make digital security simple, human, and memorable.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CyberSecurity Joe Home">
+        <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo">
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="history.html" class="nav-link">Cyber History</a>
+        <a href="ai-safety.html" class="nav-link">AI Demystified</a>
+        <a href="videos.html" class="nav-link active">Videos</a>
+        <a href="blog.html" class="nav-link">Articles</a>
+        <a href="resources.html" class="nav-link">Toolkits</a>
+        <a href="about.html" class="nav-link">About Joe</a>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-left: 0.5rem;">Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <span>🔍</span>
+          <span>Search</span>
+          <kbd>Ctrl+K</kbd>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO FEATURED PLAYER ==================== -->
+  <section id="hero-video-section" class="section" style="padding-top: calc(var(--header-height) + 2rem); border-bottom: 1px solid var(--color-border-subtle);">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">
+        <span class="badge badge-blue" style="margin-bottom: 0.8rem;">Visual Learning Center</span>
+        <h1 style="font-size: clamp(2rem, 4vw, 3rem);">
+          Video Explanations <span class="gradient-text">That Stick</span>
+        </h1>
+        <p style="color: var(--color-text-muted);">
+          Select any video below to load it directly into the master player. No fluff, just practical demonstrations and real-world clarity.
+        </p>
+      </div>
+
+      <!-- Master Player Card -->
+      <div class="card" style="background: var(--color-surface-base); border-color: var(--color-border-focus); padding: var(--space-xl); box-shadow: var(--shadow-glow);">
+        <div class="video-featured-player">
+          <iframe id="hero-video-iframe" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Featured Video Lesson" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: start;">
+          <div>
+            <span class="badge badge-amber" style="margin-bottom: 0.5rem;">Now Playing</span>
+            <h2 id="hero-video-title" style="font-size: 1.6rem; color: #ffffff; margin-bottom: 0.8rem;">
+              Why AI Won't Steal Your Identity Overnight: A Defense Manager's Perspective
+            </h2>
+            <p id="hero-video-summary" style="font-size: 1rem; color: var(--color-text-muted); line-height: 1.6;">
+              Joe breaks down how generative AI voice synthesis actually works in real time, why the media exaggerates its power, and how to set up an unbreakable 2-minute family safe word protocol.
+            </p>
+          </div>
+
+          <div style="background: var(--color-surface-elevated); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-md); padding: 1.2rem;">
+            <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--color-primary-light); font-family: var(--font-mono); margin-bottom: 0.8rem;">
+              Key Takeaways in This Lesson:
+            </h4>
+            <ul id="hero-video-takeaways" style="list-style: none; font-size: 0.9rem;">
+              <li style="margin-bottom: 0.4rem; color: var(--color-text-main);"><strong style="color: var(--color-primary-light);">✓</strong> Why emotional urgency is the real scam, not the AI voice itself</li>
+              <li style="margin-bottom: 0.4rem; color: var(--color-text-main);"><strong style="color: var(--color-primary-light);">✓</strong> Setting up a family challenge-response phrase</li>
+              <li style="color: var(--color-text-main);"><strong style="color: var(--color-primary-light);">✓</strong> Why real banks and law enforcement will never ask for gift cards or crypto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VIDEO CATALOG GRID ==================== -->
+  <section class="section">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2>Explore More Lessons</h2>
+          <p style="margin-bottom: 0;">Click on any lesson to watch it above.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-bar" style="margin-bottom: 0;">
+          <button class="filter-btn video-filter-btn active" data-category="All">All Videos</button>
+          <button class="filter-btn video-filter-btn" data-category="AI & Deepfakes">AI & Deepfakes</button>
+          <button class="filter-btn video-filter-btn" data-category="Cyber History">Cyber History</button>
+          <button class="filter-btn video-filter-btn" data-category="Everyday Safety">Everyday Safety</button>
+          <button class="filter-btn video-filter-btn" data-category="Career Roadmap">Career Roadmap</button>
+        </div>
+      </div>
+
+      <div class="grid-3" id="videos-grid-root">
+        <!-- Rendered dynamically via videos-engine.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CHANNEL CTA ==================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container container-narrow">
+      <div class="newsletter-banner" style="background: linear-gradient(135deg, #182238 0%, var(--color-surface-base) 100%);">
+        <span class="badge badge-red" style="margin-bottom: 0.8rem;">Never Miss an Episode</span>
+        <h2>Follow Joe's Video Broadcasts</h2>
+        <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
+          Subscribe to get notified whenever a new plain-English breakdown or historical documentary is published.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg">
+            <span>▶ Subscribe on YouTube</span>
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Request a Topic →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo" style="height: 48px; width: auto; margin-bottom: 0.8rem;">
+          <p style="color: var(--color-text-muted);">
+            Translating complex digital risks, AI safety, and 50 years of cyber history into clear, empowering mental models for everyday individuals and families.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Media</h5>
+          <ul class="footer-links">
+            <li><a href="videos.html">All Videos</a></li>
+            <li><a href="history.html">Cyber History Codex</a></li>
+            <li><a href="ai-safety.html">AI Demystified</a></li>
+            <li><a href="blog.html">Articles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Toolkits</h5>
+          <ul class="footer-links">
+            <li><a href="resources.html">Defense Blueprints</a></li>
+            <li><a href="about.html">About Joe</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Standards</h5>
+          <p style="font-size: 0.85rem; color: var(--color-text-dim);">
+            All videos feature unclassified, verified defensive guidance aligned with NIST and ISSM best practices.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 CyberSecurity Joe. All rights reserved.</div>
+        <div>Standard Hostinger Ready Deployment</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-search-header">
+        <span style="color: var(--color-text-dim);">🔍</span>
+        <input type="text" id="modal-search-input" class="modal-search-input" placeholder="Search articles, history milestones, AI guides, or toolkits..." autocomplete="off">
+        <button class="modal-close btn btn-secondary btn-sm" aria-label="Close search">Esc</button>
+      </div>
+      <div id="modal-search-results" class="modal-search-results"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data/videos-data.js"></script>
+  <script src="assets/js/data/blog-data.js"></script>
+  <script src="assets/js/data/resources-data.js"></script>
+  <script src="assets/js/data/history-data.js"></script>
+  <script src="assets/js/videos-engine.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

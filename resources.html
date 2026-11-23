@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Toolkits & Practical Blueprints | CyberSecurityJoe</title>
+  <meta name="description" content="Download and explore curated security blueprints, family digital safety playbooks, career roadmaps, and small business survival kits from CyberSecurity Joe.">
+  <meta name="keywords" content="cybersecurity toolkits, home defense blueprint, AI scam playbook, cybersecurity career roadmap, SMB security survival kit">
+  <meta name="author" content="CyberSecurity Joe">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Security Toolkits & Practical Blueprints | CyberSecurityJoe">
+  <meta property="og:description" content="Battle-tested security frameworks translated for families, individuals, and small businesses.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CyberSecurity Joe Home">
+        <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo">
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="history.html" class="nav-link">Cyber History</a>
+        <a href="ai-safety.html" class="nav-link">AI Demystified</a>
+        <a href="videos.html" class="nav-link">Videos</a>
+        <a href="blog.html" class="nav-link">Articles</a>
+        <a href="resources.html" class="nav-link active">Toolkits</a>
+        <a href="about.html" class="nav-link">About Joe</a>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-left: 0.5rem;">Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <span>🔍</span>
+          <span>Search</span>
+          <kbd>Ctrl+K</kbd>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem); text-align: center; border-bottom: 1px solid var(--color-border-subtle);">
+    <div class="container container-narrow">
+      <span class="badge badge-emerald" style="margin-bottom: 0.8rem;">Actionable Frameworks</span>
+      <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem);">
+        Security Toolkits & <span class="gradient-text">Practical Blueprints</span>
+      </h1>
+      <p class="lead" style="color: #cbd5e1; max-width: 680px; margin: 0 auto 2rem;">
+        Enterprise-grade defense principles distilled into simple, step-by-step implementations for families, individuals, educators, and growing businesses.
+      </p>
+
+      <!-- Instant Search Input -->
+      <div class="search-input-wrap">
+        <span class="search-icon-inside">🔍</span>
+        <input type="text" id="resources-search-input" placeholder="Search toolkits, standards, or frameworks..." aria-label="Search toolkits">
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-bar" style="margin-bottom: 0;">
+        <button class="filter-btn resource-filter-btn active" data-category="All">All Frameworks</button>
+        <button class="filter-btn resource-filter-btn" data-category="Family & Home Defense">Family & Home</button>
+        <button class="filter-btn resource-filter-btn" data-category="AI Safety & Fraud Prevention">AI Safety</button>
+        <button class="filter-btn resource-filter-btn" data-category="Cyber History & Research">History & Codex</button>
+        <button class="filter-btn resource-filter-btn" data-category="Career & Mentorship">Career Roadmap</button>
+        <button class="filter-btn resource-filter-btn" data-category="Small Business Security">Small Business</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CATALOG GRID ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3" id="resources-catalog-root">
+        <!-- Rendered dynamically by resources-engine.js reading resources-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CALLOUT ==================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container container-narrow">
+      <div class="newsletter-banner" style="background: linear-gradient(135deg, #102131 0%, var(--color-surface-card) 100%);">
+        <span class="badge badge-blue" style="margin-bottom: 0.8rem;">Custom Implementation</span>
+        <h2>Need a Custom Security Assessment or Workshop?</h2>
+        <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
+          Joe provides tailored advisory and interactive workshops for schools, community organizations, and small businesses looking to eliminate digital vulnerabilities.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Book an Advisory Consultation →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo" style="height: 48px; width: auto; margin-bottom: 0.8rem;">
+          <p style="color: var(--color-text-muted);">
+            Translating complex digital risks, AI safety, and 50 years of cyber history into clear, empowering mental models for everyday individuals and families.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Toolkits</h5>
+          <ul class="footer-links">
+            <li><a href="resources.html">Family Defense Blueprint</a></li>
+            <li><a href="resources.html">AI Scam Playbook</a></li>
+            <li><a href="resources.html">Career Jumpstart Map</a></li>
+            <li><a href="resources.html">Small Business Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Cyber History</a></li>
+            <li><a href="ai-safety.html">AI Demystified</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Assurance</h5>
+          <p style="font-size: 0.85rem; color: var(--color-text-dim);">
+            All toolkits are open, free from vendor lock-in, and designed for immediate human application.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 CyberSecurity Joe. All rights reserved.</div>
+        <div>Standard Hostinger Ready Deployment</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-search-header">
+        <span style="color: var(--color-text-dim);">🔍</span>
+        <input type="text" id="modal-search-input" class="modal-search-input" placeholder="Search articles, history milestones, AI guides, or toolkits..." autocomplete="off">
+        <button class="modal-close btn btn-secondary btn-sm" aria-label="Close search">Esc</button>
+      </div>
+      <div id="modal-search-results" class="modal-search-results"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data/resources-data.js"></script>
+  <script src="assets/js/data/blog-data.js"></script>
+  <script src="assets/js/data/history-data.js"></script>
+  <script src="assets/js/data/videos-data.js"></script>
+  <script src="assets/js/resources-engine.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

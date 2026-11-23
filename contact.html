@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect with Joe | Mentorship, Speaking & Inquiries | CyberSecurityJoe</title>
+  <meta name="description" content="Reach out directly to CyberSecurity Joe for speaking engagements, AI safety questions, career mentorship, or suspicious scam inquiries.">
+  <meta name="keywords" content="contact cybersecurity joe, cybersecurity speaker, AI safety advice, cybersecurity mentorship, ask cybersecurity questions">
+  <meta name="author" content="CyberSecurity Joe">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Connect with Joe | CyberSecurityJoe">
+  <meta property="og:description" content="Send a message or inquiry directly to Information Systems Security Manager CyberSecurity Joe.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CyberSecurity Joe Home">
+        <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo">
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="history.html" class="nav-link">Cyber History</a>
+        <a href="ai-safety.html" class="nav-link">AI Demystified</a>
+        <a href="videos.html" class="nav-link">Videos</a>
+        <a href="blog.html" class="nav-link">Articles</a>
+        <a href="resources.html" class="nav-link">Toolkits</a>
+        <a href="about.html" class="nav-link">About Joe</a>
+        <a href="contact.html" class="btn btn-primary btn-sm active" style="margin-left: 0.5rem;">Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <span>🔍</span>
+          <span>Search</span>
+          <kbd>Ctrl+K</kbd>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem); text-align: center; border-bottom: 1px solid var(--color-border-subtle); background: radial-gradient(circle at 50% 10%, rgba(14, 165, 233, 0.08) 0%, transparent 60%);">
+    <div class="container container-narrow">
+      <span class="badge badge-blue" style="margin-bottom: 0.8rem;">Direct Channel</span>
+      <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem);">
+        Let's Start a <span class="gradient-text">Conversation</span>
+      </h1>
+      <p class="lead" style="color: #cbd5e1; max-width: 680px; margin: 0 auto;">
+        Have a question about a strange phone call or AI scam? Looking for career mentorship? Interested in booking Joe for a keynote or workshop? Send a note below.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== MAIN CONTACT SECTION ==================== -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3.5rem; align-items: start;">
+        
+        <!-- Interactive Form Card -->
+        <div class="card" style="background: var(--color-surface-base); border-color: var(--color-border-focus); padding: var(--space-2xl); box-shadow: var(--shadow-glow);">
+          <h2 style="font-size: 1.6rem; color: #ffffff; margin-bottom: 0.4rem;">Send a Secure Message</h2>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            Fields marked with an asterisk (<span style="color: var(--color-accent-red);">*</span>) are required. Your information is never sold or shared.
+          </p>
+
+          <div id="form-alert-box" class="form-alert" role="alert" aria-live="polite"></div>
+
+          <form id="cs-contact-form" novalidate>
+            <!-- Honeypot anti-spam trap (hidden from users) -->
+            <div class="honeypot-wrap" aria-hidden="true">
+              <label for="contact-hp">Leave this field blank</label>
+              <input type="text" id="contact-hp" name="_cs_website_url" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Full Name <span style="color: var(--color-accent-red);">*</span></label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Sarah Jenkins" required minlength="2">
+              <div class="form-error-msg"></div>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address <span style="color: var(--color-accent-red);">*</span></label>
+              <input type="email" id="contact-email" name="email" class="form-control" placeholder="name@example.com" required>
+              <div class="form-error-msg"></div>
+            </div>
+
+            <!-- Inquiry Type -->
+            <div class="form-group">
+              <label for="contact-inquiry-type" class="form-label">What Can Joe Help You With?</label>
+              <select id="contact-inquiry-type" name="inquiryType" class="form-control" style="background-color: var(--color-surface-elevated);">
+                <option value="General Inquiry">General Question or Feedback</option>
+                <option value="AI Safety & Scam Check">Suspected AI Scam or Voice Cloning Concern</option>
+                <option value="Speaking Engagement">Keynote Speech or Educational Workshop</option>
+                <option value="Career Mentorship">Cybersecurity Career Advice</option>
+                <option value="Small Business Advisory">Small Business Security Guidance</option>
+              </select>
+            </div>
+
+            <!-- Message Body -->
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Your Message <span style="color: var(--color-accent-red);">*</span></label>
+              <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Describe your question or situation in plain English..." required minlength="10"></textarea>
+              <div class="form-error-msg"></div>
+            </div>
+
+            <button type="submit" id="form-submit-btn" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>✉️ Send Message to Joe</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Sidebar Direct Inquiries & FAQ -->
+        <div>
+          <div class="card" style="margin-bottom: 2rem;">
+            <span class="badge badge-emerald" style="margin-bottom: 0.8rem;">Direct Channels</span>
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: #ffffff;">Fast Response Times</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1.2rem;">
+              Joe reviews all inquiries personally. For suspected scams affecting senior family members, responses are prioritized to provide immediate peace of mind.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.92rem;">
+              <div style="display: flex; align-items: center; gap: 0.8rem;">
+                <span style="font-size: 1.2rem;">📍</span>
+                <span>United States (Defense Logistics Baseline)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.8rem;">
+                <span style="font-size: 1.2rem;">⚡</span>
+                <span>Typical response within 24–48 hours</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.8rem;">
+                <span style="font-size: 1.2rem;">🔒</span>
+                <span>Zero spam, end-to-end encrypted SMTP relay</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick FAQ -->
+          <div class="card">
+            <h3 style="font-size: 1.2rem; color: #ffffff; margin-bottom: 1rem;">Frequently Asked Questions</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+              <div>
+                <strong style="color: var(--color-primary-light); font-size: 0.92rem; display: block; margin-bottom: 0.2rem;">Do you charge everyday people for basic safety questions?</strong>
+                <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 0;">
+                  Never. Public education and family reassurance are the core reasons CyberSecurity Joe exists. Ask your question freely.
+                </p>
+              </div>
+
+              <div>
+                <strong style="color: var(--color-primary-light); font-size: 0.92rem; display: block; margin-bottom: 0.2rem;">Can you help review an enterprise or business environment?</strong>
+                <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 0;">
+                  Yes. Joe accepts select fractional vCISO advisory roles and speaking engagements for organizations aligned with zero-trust defense.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo" style="height: 48px; width: auto; margin-bottom: 0.8rem;">
+          <p style="color: var(--color-text-muted);">
+            Translating complex digital risks, AI safety, and 50 years of cyber history into clear, empowering mental models for everyday individuals and families.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Cyber History</a></li>
+            <li><a href="ai-safety.html">AI Demystified</a></li>
+            <li><a href="videos.html">Videos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Toolkits</h5>
+          <ul class="footer-links">
+            <li><a href="resources.html">All Toolkits</a></li>
+            <li><a href="blog.html">Articles & Guides</a></li>
+            <li><a href="about.html">About Joe</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Hosting</h5>
+          <p style="font-size: 0.85rem; color: var(--color-text-dim);">
+            Ready for Hostinger Email & PHP mail delivery with zero third-party dependencies.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 CyberSecurity Joe. All rights reserved.</div>
+        <div>Standard Hostinger Ready Deployment</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-search-header">
+        <span style="color: var(--color-text-dim);">🔍</span>
+        <input type="text" id="modal-search-input" class="modal-search-input" placeholder="Search articles, history milestones, AI guides, or toolkits..." autocomplete="off">
+        <button class="modal-close btn btn-secondary btn-sm" aria-label="Close search">Esc</button>
+      </div>
+      <div id="modal-search-results" class="modal-search-results"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data/blog-data.js"></script>
+  <script src="assets/js/data/resources-data.js"></script>
+  <script src="assets/js/data/history-data.js"></script>
+  <script src="assets/js/data/videos-data.js"></script>
+  <script src="assets/js/contact-form.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

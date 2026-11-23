@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber History Codex (1969 – 2026) | CyberSecurityJoe</title>
+  <meta name="description" content="Explore 50+ years of cybersecurity history, from ARPANET and the 1988 Morris Worm to Stuxnet and modern AI warfare, explained in gripping, plain-English stories.">
+  <meta name="keywords" content="cybersecurity history, morris worm, ARPANET, stuxnet, DEF CON history, cyber milestones, CSIS incidents">
+  <meta name="author" content="CyberSecurity Joe">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Cyber History Codex (1969 – 2026) | CyberSecurityJoe">
+  <meta property="og:description" content="The untangled true stories of how curiosity, hacks, and defenses built our connected world.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CyberSecurity Joe Home">
+        <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo">
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="history.html" class="nav-link active">Cyber History</a>
+        <a href="ai-safety.html" class="nav-link">AI Demystified</a>
+        <a href="videos.html" class="nav-link">Videos</a>
+        <a href="blog.html" class="nav-link">Articles</a>
+        <a href="resources.html" class="nav-link">Toolkits</a>
+        <a href="about.html" class="nav-link">About Joe</a>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-left: 0.5rem;">Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <span>🔍</span>
+          <span>Search</span>
+          <kbd>Ctrl+K</kbd>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem); text-align: center; border-bottom: 1px solid var(--color-border-subtle); background: radial-gradient(circle at 50% 20%, rgba(14, 165, 233, 0.08) 0%, transparent 60%);">
+    <div class="container container-narrow">
+      <span class="badge badge-amber" style="margin-bottom: 1rem;">Chronological Archive</span>
+      <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.5rem);">
+        The Cyber History <span class="gradient-text">Codex</span>
+      </h1>
+      <p class="lead" style="color: #cbd5e1; max-width: 680px; margin: 0 auto 2rem;">
+        You cannot defend the present if you don't understand the past. Trace the defining breakthroughs, accidental catastrophes, and historic conflicts that forged modern digital defense.
+      </p>
+
+      <!-- Search Milestones Inside Page -->
+      <div class="search-input-wrap">
+        <span class="search-icon-inside">🔍</span>
+        <input type="text" id="history-search-input" placeholder="Search by year, incident, or keyword (e.g. Morris Worm, Stuxnet)..." aria-label="Search history milestones">
+      </div>
+
+      <!-- Era Filter Tabs -->
+      <div class="filter-bar" style="margin-bottom: 0;">
+        <button class="filter-btn era-btn active" data-era="all">All Eras (1969–2026)</button>
+        <button class="filter-btn era-btn" data-era="dawn">1960–1989: Dawn & ARPANET</button>
+        <button class="filter-btn era-btn" data-era="web">1990–2005: Web Outbreaks</button>
+        <button class="filter-btn era-btn" data-era="nation">2006–2020: State & Cloud</button>
+        <button class="filter-btn era-btn" data-era="ai">2021–2026: The AI Frontier</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TIMELINE SECTION ==================== -->
+  <section class="section">
+    <div class="container">
+      <div id="history-timeline-root" class="timeline">
+        <!-- Rendered dynamically via history-engine.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HISTORY NEWSLETTER ==================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container container-narrow">
+      <div class="newsletter-banner">
+        <span class="badge badge-amber" style="margin-bottom: 0.8rem;">Never Forget the Lessons</span>
+        <h2>Enjoying These Historical Deep Dives?</h2>
+        <p style="color: #cbd5e1; margin-bottom: 1.5rem;">
+          Every month, Joe releases an unclassified case study dissecting one historic breach and explaining how it impacts everyday users today.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Subscribe Free</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="CyberSecurity Joe Logo" style="height: 48px; width: auto; margin-bottom: 0.8rem;">
+          <p style="color: var(--color-text-muted);">
+            Translating complex digital risks, AI safety, and 50 years of cyber history into clear, empowering mental models for everyday individuals and families.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Cyber History</a></li>
+            <li><a href="ai-safety.html">AI Demystified</a></li>
+            <li><a href="videos.html">Videos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul class="footer-links">
+            <li><a href="resources.html">All Toolkits</a></li>
+            <li><a href="blog.html">Articles & Guides</a></li>
+            <li><a href="about.html">About Joe</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Inspiration</h5>
+          <p style="font-size: 0.85rem; color: var(--color-text-dim);">
+            Inspired by NIST cyber archives, CSIS significant incident datasets, and 30+ years of frontline security defense.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 CyberSecurity Joe. All rights reserved.</div>
+        <div>Standard Hostinger Ready Deployment</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-search-header">
+        <span style="color: var(--color-text-dim);">🔍</span>
+        <input type="text" id="modal-search-input" class="modal-search-input" placeholder="Search articles, history milestones, AI guides, or toolkits..." autocomplete="off">
+        <button class="modal-close btn btn-secondary btn-sm" aria-label="Close search">Esc</button>
+      </div>
+      <div id="modal-search-results" class="modal-search-results"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data/history-data.js"></script>
+  <script src="assets/js/data/blog-data.js"></script>
+  <script src="assets/js/data/resources-data.js"></script>
+  <script src="assets/js/data/videos-data.js"></script>
+  <script src="assets/js/history-engine.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
