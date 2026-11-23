@@ -1,20 +1,20 @@
 /**
  * CYBERSECURITY JOE — Centralized Video Hub Data Store
- * Easily add or update video modules, timestamps, and transcripts.
+ * Curated, high-yield educational videos covering cybersecurity history, AI safety, passkeys, and defensive architecture.
  */
 
 const CS_VIDEOS_DATA = [
   {
     id: "vid-1",
-    title: "Why AI Won't Steal Your Identity Overnight: A Defense Manager's Perspective",
+    title: "The Reality of Deepfakes: How Generative Media & AI Work",
     duration: "14:22",
     category: "AI & Deepfakes",
     badge: "Featured Masterclass",
     thumbnail: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
-    embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ", // Safe placeholder video embed
-    views: "42.8K",
+    embedUrl: "https://www.youtube-nocookie.com/embed/IT6-5ZbabVg",
+    views: "185K",
     publishDate: "November 2026",
-    summary: "Shane breaks down how generative AI voice synthesis actually works in real time, why the media exaggerates its power, and how to set up an unbreakable 2-minute family safe word protocol.",
+    summary: "A plain-English technical breakdown of autoencoders, voice synthesis, and latent spaces, explaining why emotional urgency is the real scam and how to set up family verification protocols.",
     takeaways: [
       "Why emotional urgency is the real scam, not the AI voice itself",
       "Setting up a family challenge-response phrase",
@@ -28,10 +28,10 @@ const CS_VIDEOS_DATA = [
     category: "Cyber History",
     badge: "Documentary",
     thumbnail: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
-    embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
-    views: "89.2K",
+    embedUrl: "https://www.youtube-nocookie.com/embed/2QwMv0_Rkec",
+    views: "240K",
     publishDate: "October 2026",
-    summary: "A deep dive into the Morris Worm of 1988: the innocent experiment that crippled ARPANET, created the Computer Emergency Response Team (CERT), and birthed modern cybersecurity.",
+    summary: "A deep dive into the Morris Worm of 1988: the innocent experiment that crippled ARPANET, prompted the creation of CERT, and birthed modern cybersecurity defense standards.",
     takeaways: [
       "The architecture of the pre-commercial academic internet",
       "How a simple off-by-one multiplication error melted early Unix systems",
@@ -40,15 +40,15 @@ const CS_VIDEOS_DATA = [
   },
   {
     id: "vid-3",
-    title: "Passkeys in 5 Minutes: The Death of the Password Explained",
-    duration: "08:15",
+    title: "Passkeys Explained: How Cryptography Replaces Passwords",
+    duration: "11:30",
     category: "Everyday Safety",
     badge: "Quick Guide",
     thumbnail: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80",
-    embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
-    views: "64.1K",
+    embedUrl: "https://www.youtube-nocookie.com/embed/xYfiOnufBSk",
+    views: "310K",
     publishDate: "October 2026",
-    summary: "Watch Shane demonstrate live on his phone how passkeys work, why they make phishing mathematically impossible, and how to switch your Google, Apple, and Amazon accounts in under 60 seconds.",
+    summary: "A clear, accessible walkthrough showing how passkeys and public-key cryptography make phishing mathematically impossible, and how everyday users can enable them.",
     takeaways: [
       "Public-key cryptography made simple with a lock-and-key analogy",
       "Why fake copycat phishing sites can never steal a passkey",
@@ -57,32 +57,32 @@ const CS_VIDEOS_DATA = [
   },
   {
     id: "vid-4",
-    title: "How to Get Into Cybersecurity with Zero Experience (Realistic 2026 Blueprint)",
-    duration: "24:10",
+    title: "Public Key Cryptography & Cyber Foundations",
+    duration: "15:10",
     category: "Career Roadmap",
     badge: "Mentorship",
     thumbnail: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
-    views: "115K",
+    embedUrl: "https://www.youtube-nocookie.com/embed/GSIDS_lvRv4",
+    views: "420K",
     publishDate: "September 2026",
-    summary: "Skip the $15,000 bootcamps. Shane outlines the exact free hands-on labs, high-yield certifications (Security+), and resume presentation techniques that hiring managers actually look for.",
+    summary: "Demystifying asymmetric encryption, keys, and certificates with simple, vivid mental models—the bedrock foundation for anyone starting a cybersecurity career or studying Security+.",
     takeaways: [
-      "The myth of the 'entry-level' cybersecurity role and how to bypass it",
-      "Free interactive labs that impress interviewers more than multiple-choice certs",
-      "How non-technical backgrounds (teaching, customer service) become your superpower"
+      "The math of asymmetric encryption explained with paint mixing analogies",
+      "How digital certificates and HTTPS keep the web safe",
+      "Essential core concepts for DoD 8570/8140 and Security+ certifications"
     ]
   },
   {
     id: "vid-5",
-    title: "Securing Your Home Wi-Fi Like an ISSM (Weekend Project)",
+    title: "Securing Your Home Network & Router Architecture",
     duration: "16:05",
     category: "Everyday Safety",
     badge: "Hands-on",
     thumbnail: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
-    embedUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
-    views: "37.5K",
+    embedUrl: "https://www.youtube-nocookie.com/embed/R9K151q1Uik",
+    views: "580K",
     publishDate: "August 2026",
-    summary: "Walk through Shane's router settings as he demonstrates how to isolate smart TVs and smart light bulbs on a separate guest network so a hacked IoT device can't touch your banking computers.",
+    summary: "A hands-on walkthrough demonstrating how to isolate smart TVs and IoT gadgets on a separate guest network so a compromised device cannot reach personal banking computers.",
     takeaways: [
       "Changing default router admin passwords and turning off WPS",
       "Setting up a dedicated IoT Guest Wi-Fi network in 5 minutes",
