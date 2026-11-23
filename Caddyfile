@@ -1,0 +1,12 @@
+{
+    email shgooseman@yahoo.com
+    admin off
+}
+
+http://www.cybersecurityjoe.com, http://cybersecurityjoe.com, http://2.25.150.251 {
+    reverse_proxy web:80
+}
+
+www.cybersecurityjoe.com, cybersecurityjoe.com {
+    reverse_proxy web:80
+}

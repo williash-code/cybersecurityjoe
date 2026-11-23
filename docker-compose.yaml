@@ -27,8 +27,12 @@ services:
     volumes:
       - caddy_data:/data
       - caddy_config:/config
+      - web-content:/site
+    depends_on:
+      downloader:
+        condition: service_completed_successfully
     command: >
-      caddy reverse-proxy --from www.cybersecurityjoe.com,cybersecurityjoe.com --to web:80
+      caddy run --config /site/Caddyfile --adapter caddyfile
 
 volumes:
   web-content:
