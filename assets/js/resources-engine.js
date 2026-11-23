@@ -101,8 +101,11 @@ function renderSingleResource() {
               </div>
             </div>
             <div class="toolkit-actions">
+              <a href="assets/pdf/${item.slug}.pdf" download="${item.slug}.pdf" class="btn btn-primary btn-sm" id="btn-download-pdf" title="Download official PDF document">
+                <span>📥 Download PDF</span>
+              </a>
               <button class="btn btn-secondary btn-sm" id="btn-print-toolkit" title="Print clean PDF checklist">
-                <span>🖨️ Print / Save PDF</span>
+                <span>🖨️ Print</span>
               </button>
               <button class="btn btn-secondary btn-sm" id="btn-reset-toolkit" title="Reset all checked items">
                 <span>↺ Reset</span>
@@ -432,7 +435,10 @@ function createResourceCardElement(item) {
     </div>
     <div class="card-footer">
       <span style="font-size: 0.82rem; color: var(--color-text-dim);">For: ${escapeHtml(item.client)}</span>
-      <a href="resource-detail.html?slug=${encodeURIComponent(item.slug)}" class="btn btn-primary btn-sm">Open Toolkit & Guide →</a>
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <a href="assets/pdf/${item.slug}.pdf" download="${item.slug}.pdf" class="btn btn-secondary btn-sm" style="padding: 0.35rem 0.65rem;" title="Download PDF Guide">📥 PDF</a>
+        <a href="resource-detail.html?slug=${encodeURIComponent(item.slug)}" class="btn btn-primary btn-sm">Open Toolkit →</a>
+      </div>
     </div>
   `;
   return card;
